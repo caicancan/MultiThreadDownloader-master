@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 //        }).start();
         DownloadManager instance = DownloadManager.
                 getInstance(DemoApplication.getContext());
-        instance.download("WECHAT", WECHAT_DOWNLOAD_URL, "/sdcard", 1, new FileDownloader.OnDownloadListener() {
+        instance.download("WECHAT", TEST_DOWNLOAD_URL, "/sdcard", 1, new FileDownloader.OnDownloadListener() {
             @Override
             public void onUpdate(int totalSize, int currentSize, int speed, int percent) {
                 System.out.println("1 percent = " + percent + "%");
